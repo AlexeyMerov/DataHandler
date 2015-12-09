@@ -4,8 +4,9 @@ Servlet WEB API that allows to query/filter information from text file over web.
 
 API reads text file from file system and applies filtering/querying logic to produce response.
 
-1. API response content type is JSON
-2. Query params:
+API response content type is JSON
+
+Query params:
 - limit: integer which represents max number of chars in text that API returns. If parameter is blank or missing returns max 10000 chars.
 - q: string which represents text to search in file, i.e. if it q=java - API returns all strings which equals to ‘java’ or containing it. If q is blank or missing - API returns all text from file.
 - length: integer which represents max string length. API returns string which doesn’t exceed that number or if there is no such strings empty response. 
